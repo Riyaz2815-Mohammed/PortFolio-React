@@ -21,10 +21,7 @@
 
 .contact__link {
 .contact__cta-text .text-gradient {
-  background: linear-gradient(135deg, var(--accent), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
 }
 
 .contact__link {
@@ -44,7 +41,7 @@
   border-color: var(--accent);
   box-shadow: 0 12px 24px rgba(99, 102, 241, 0.15);
   transform: translateY(-4px);
-  background: linear-gradient(135deg, var(--bg-card), rgba(99, 102, 241, 0.05));
+  background: var(--bg-card);
 }
 
 .contact__link-icon {

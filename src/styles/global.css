@@ -74,10 +74,8 @@
 
 .btn-outline {
   background: transparent;
-  background: linear-gradient(135deg, var(--accent), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border);
 }
 
 .section-title h2::after {
@@ -85,10 +83,9 @@
   display: block;
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent), var(--secondary));
+  background: var(--accent);
   margin: 1rem auto 0;
   border-radius: 2px;
-  border: 1.5px solid var(--border);
 }
 
 .btn-outline:hover {
@@ -103,10 +100,7 @@
 
 /* Text gradient */
 .text-gradient {
-  background: linear-gradient(135deg, var(--accent), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
 }
 
 /* Tag / Chip */

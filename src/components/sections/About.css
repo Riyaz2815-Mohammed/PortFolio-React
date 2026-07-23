@@ -33,7 +33,6 @@
   border-radius: var(--radius-md);
   cursor: default;
   transition: all var(--transition-base);
-  background: linear-gradient(135deg, var(--accent-light), rgba(99, 102, 241, 0.05));
   transform: translateY(0);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -42,11 +41,6 @@
   border-color: var(--accent);
   box-shadow: 0 12px 24px rgba(99, 102, 241, 0.15);
   transform: translateY(-4px);
-}
-
-.about__highlight-card:hover {
-  border-color: var(--accent);
-  box-shadow: var(--shadow-md);
 }
 
 .about__highlight-icon {

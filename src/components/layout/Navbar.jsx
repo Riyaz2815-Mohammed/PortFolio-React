@@ -4,12 +4,31 @@ import { navLinks } from '../../data/navigation';
 import { useScrollProgress } from '../../hooks/useScrollProgress';
 import { useScrollTo } from '../../hooks/useScrollTo';
 import './Navbar.css';
+import { FiMoon, FiSun } from 'react-icons/fi';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { activeSection } = useScrollProgress();
   const { scrollTo } = useScrollTo();
+
+  const [theme, setTheme] = useState(() => {
+    try {
+      return localStorage.getItem('theme') || (document.documentElement.classList.contains('theme-light') ? 'light' : 'dark');
+    } catch (e) {
+      return document.documentElement.classList.contains('theme-light') ? 'light' : 'dark';
+    }
+  });
+
+  useEffect(() => {
+    try {
+      document.documentElement.classList.remove(theme === 'light' ? 'theme-dark' : 'theme-light');
+      document.documentElement.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
+      localStorage.setItem('theme', theme);
+    } catch (e) {
+      // ignore
+    }
+  }, [theme]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,6 +78,14 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile Hamburger */}
+        <button
+          className="theme-toggle"
+          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+          aria-label="Toggle theme"
+          title="Toggle theme"
+        >
+          {theme === 'light' ? <FiMoon /> : <FiSun />}
+        </button>
         <button
           className={`navbar__hamburger ${isOpen ? 'navbar__hamburger--open' : ''}`}
           onClick={() => setIsOpen(!isOpen)}
