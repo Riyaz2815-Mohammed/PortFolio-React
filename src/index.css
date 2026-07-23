@@ -70,10 +70,31 @@ html {
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-primary);
-  color: var(--text-secondary);
-  line-height: 1.7;
+  color: var(--text-primary);
+  line-height: 1.6;
   overflow-x: hidden;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 800; }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); font-weight: 700; }
+h3 { font-size: clamp(1.125rem, 2.2vw, 1.25rem); font-weight: 600; }
+
+/* Improve responsive typographic rhythm */
+@media (max-width: 1024px) {
+  body { font-size: 15px; }
+}
+
+@media (max-width: 640px) {
+  body { font-size: 14px; }
 }
 
 a {
