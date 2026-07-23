@@ -15,7 +15,9 @@
 
 .expertise__item:hover {
   border-color: var(--accent);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 12px 24px rgba(99, 102, 241, 0.15);
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, var(--bg-card), rgba(99, 102, 241, 0.05));
 }
 
 .expertise__item-header {

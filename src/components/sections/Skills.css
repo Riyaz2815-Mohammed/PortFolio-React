@@ -10,6 +10,15 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   transition: all var(--transition-base);
+  background: linear-gradient(135deg, var(--bg-card), rgba(99, 102, 241, 0.02));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.skills__card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 12px 24px rgba(99, 102, 241, 0.15);
+  transform: translateY(-6px);
   cursor: default;
 }
 
