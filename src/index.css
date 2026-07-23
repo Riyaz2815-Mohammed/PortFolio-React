@@ -147,3 +147,32 @@ input, textarea {
   background: var(--text-secondary);
 }
 
+/* Motion utilities */
+.animate-fade {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+.animate-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-raise {
+  transform: translateY(0);
+  transition: transform var(--transition-base) var(--transition-fast), box-shadow var(--transition-base);
+}
+.animate-raise:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade,
+  .animate-raise,
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
