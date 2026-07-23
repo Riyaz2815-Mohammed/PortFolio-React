@@ -50,9 +50,11 @@ export default function Experience() {
                   </motion.li>
                 ))}
               </ul>
+              </div>
             </motion.div>
           </ScrollReveal>
         </div>
+      </div>
     </section>
   );
 }

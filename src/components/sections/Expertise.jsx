@@ -37,6 +37,7 @@ export default function Expertise() {
             </ScrollReveal>
           ))}
         </div>
+      </div>
     </section>
   );
 }

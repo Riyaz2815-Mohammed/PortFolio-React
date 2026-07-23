@@ -75,6 +75,7 @@ export default function Contact() {
             </ScrollReveal>
           ))}
         </div>
+      </div>
     </section>
   );
 }

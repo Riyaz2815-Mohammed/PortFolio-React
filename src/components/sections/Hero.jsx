@@ -79,6 +79,7 @@ export default function Hero() {
             <span className="hero__role">
               {roles[roleIndex].substring(0, charIndex)}
               <span className="hero__role-cursor">|</span>
+            </span>
           </div>
           <p className="hero__headline">
             Building scalable backend systems, AI-powered products, and production-grade software.

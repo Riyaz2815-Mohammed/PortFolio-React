@@ -27,6 +27,7 @@ export default function TechStack() {
             </motion.span>
           ))}
         </div>
+      </div>
     </section>
   );
 }

@@ -28,6 +28,7 @@ export default function Projects() {
                       {project.title.split(' ').map(w => w[0]).join('').substring(0, 2)}
                     </span>
                   </div>
+                </div>
                 <div className="projects__card-body">
                   <h3 className="projects__card-title">{project.title}</h3>
                   <p className="projects__card-description">{project.description}</p>
@@ -56,10 +57,12 @@ export default function Projects() {
                       Live Demo
                     </a>
                   </div>
+                </div>
               </motion.div>
             </ScrollReveal>
           ))}
         </div>
+      </div>
     </section>
   );
 }
