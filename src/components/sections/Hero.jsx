@@ -8,7 +8,8 @@ import './Hero.css';
 const roles = [
   'Software Engineer',
   'Backend Developer',
-  'Systems Engineer',
+  'AI Engineer',
+  'Full Stack Developer',
 ];
 
 export default function Hero() {
@@ -73,7 +74,7 @@ export default function Hero() {
             Hi, I'm Mohammed Riyaz.
           </h1>
           <div className="hero__role-wrapper">
-            <span className="hero__role-label">I build </span>
+            <span className="hero__role-label">I am an </span>
             <span className="hero__role">
               {roles[roleIndex].substring(0, charIndex)}
               <span className="hero__role-cursor">|</span>
