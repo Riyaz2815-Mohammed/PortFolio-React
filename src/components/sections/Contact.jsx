@@ -8,8 +8,8 @@ const contactLinks = [
   {
     icon: <FiMail />,
     label: 'Email',
-    href: 'mailto:riyaz@example.com',
-    value: 'riyaz@example.com',
+    href: 'mailto:mohammedriyaz2815@gmail.com',
+    value: 'mohammedriyaz2815@gmail.com',
   },
   {
     icon: <FiGithub />,
