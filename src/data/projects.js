@@ -22,8 +22,8 @@ export const projects = [
   },
   {
     title: 'LACCIS - Legal Clause Intelligence',
-    description: 'AI-powered system for intelligent analysis and extraction of legal contract clauses. Automates contract review and clause intelligence using NLP and machine learning.',
-    technologies: ['Python', 'Machine Learning', 'NLP', 'FastAPI', 'PostgreSQL'],
+    description: 'AI-powered system for intelligent analysis and extraction of legal contract clauses using agentic workflows. Automates contract review, clause intelligence, and intelligent decision-making with autonomous agent coordination.',
+    technologies: ['Python', 'Agentic Workflow', 'LLM Agents', 'FastAPI', 'PostgreSQL'],
     github: 'https://github.com/Riyaz2815-Mohammed/LACCIS.git',
     live: 'https://laccis.vercel.app',
   },
