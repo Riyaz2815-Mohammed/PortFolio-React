@@ -116,11 +116,13 @@ h1, h2, h3, h4 {
   font-family: var(--font-heading);
   color: var(--text-primary);
   margin: 0 0 0.5rem 0;
+  letter-spacing: -0.015em;
 }
 
-h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 800; }
-h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); font-weight: 700; }
-h3 { font-size: clamp(1.125rem, 2.2vw, 1.25rem); font-weight: 600; }
+h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.2; }
+h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; line-height: 1.3; }
+h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); font-weight: 600; line-height: 1.4; }
+h4 { font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
 
 /* Improve responsive typographic rhythm */
 @media (max-width: 1024px) {
@@ -184,7 +186,7 @@ input, textarea {
 /* Motion utilities */
 .animate-fade {
   opacity: 0;
-  transform: translateY(8px);
+  transform: translateY(12px);
   transition: opacity var(--transition-base), transform var(--transition-base);
 }
 .animate-fade.visible {
@@ -194,16 +196,25 @@ input, textarea {
 
 .animate-raise {
   transform: translateY(0);
-  transition: transform var(--transition-base) var(--transition-fast), box-shadow var(--transition-base);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 .animate-raise:hover {
-  transform: translateY(-6px) scale(1.01);
+  transform: translateY(-8px) scale(1.02);
   box-shadow: var(--shadow-lg);
+}
+
+.animate-glow {
+  transition: all var(--transition-base);
+  box-shadow: 0 0 0 0 var(--accent-light);
+}
+.animate-glow:hover {
+  box-shadow: 0 0 30px rgba(124, 92, 255, 0.3);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .animate-fade,
   .animate-raise,
+  .animate-glow,
   * {
     transition: none !important;
     animation: none !important;
