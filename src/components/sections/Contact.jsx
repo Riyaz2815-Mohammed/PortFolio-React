@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiMail, FiGithub, FiLinkedin, FiTwitter, FiArrowUpRight } from 'react-icons/fi';
+import { FiMail, FiGithub, FiLinkedin, FiArrowUpRight } from 'react-icons/fi';
 import SectionTitle from '../common/SectionTitle';
 import ScrollReveal from '../common/ScrollReveal';
 import './Contact.css';
@@ -22,12 +22,6 @@ const contactLinks = [
     label: 'LinkedIn',
     href: 'https://linkedin.com/in/riyaz2815',
     value: 'Mohammed Riyaz',
-  },
-  {
-    icon: <FiTwitter />,
-    label: 'Twitter / X',
-    href: 'https://twitter.com',
-    value: '@riyaz_dev',
   },
 ];
 
