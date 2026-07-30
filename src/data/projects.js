@@ -7,6 +7,13 @@ export const projects = [
     live: 'https://it-26.vercel.app',
   },
   {
+    title: 'Email RAG Chatbot - AI-Powered Gmail Assistant',
+    description: 'An intelligent, scalable chatbot that connects to your Gmail inbox and processes emails using Retrieval-Augmented Generation (RAG). Features secure OAuth Gmail integration, vector embeddings via Sentence Transformers, Pinecone vector database for fast similarity search, and open-source LLM (Llama 3). Retrieves relevant emails and generates contextual responses with cloud-ready AWS deployment.',
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'RAG Pipeline', 'Pinecone', 'Llama 3', 'Gmail API', 'AWS', 'Sentence Transformers'],
+    github: 'https://github.com/Riyaz2815-Mohammed/Email-RAG.git',
+    live: 'https://ai-email-rag-chatbot.vercel.app',
+  },
+  {
     title: 'Bill Buddy - Smart Bill Splitting',
     description: 'An intelligent bill payment app that simplifies expense splitting among friends. Uses OCR to scan bills, lets users select what they ate, and automates payments to whoever paid the full amount. Works as a modern payment solution similar to GPay for peer-to-peer transactions.',
     technologies: ['React', 'Node.js', 'OCR', 'Payment API', 'MongoDB'],
