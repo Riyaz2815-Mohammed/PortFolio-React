@@ -22,13 +22,6 @@ export default function Projects() {
                 whileHover={{ y: -6 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
               >
-                <div className="projects__card-image">
-                  <div className="projects__card-placeholder">
-                    <span className="projects__card-initials">
-                      {project.title.split(' ').map(w => w[0]).join('').substring(0, 2)}
-                    </span>
-                  </div>
-                </div>
                 <div className="projects__card-body">
                   <h3 className="projects__card-title">{project.title}</h3>
                   <p className="projects__card-description">{project.description}</p>

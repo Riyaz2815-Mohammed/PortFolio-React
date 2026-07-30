@@ -1,6 +1,6 @@
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -10,6 +10,8 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
 }
 
 .projects__card:hover {
@@ -17,40 +19,8 @@
   box-shadow: var(--shadow-lg);
 }
 
-.projects__card-image {
-  height: 180px;
-  overflow: hidden;
-}
-
-.projects__card-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-card);
-  position: relative;
-  overflow: hidden;
-}
-
-.projects__card-image::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(124,92,255,0.04);
-  z-index: 1;
-}
-
-.projects__card-initials {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--accent);
-  opacity: 0.6;
-  letter-spacing: 0.1em;
-}
-
 .projects__card-body {
   padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
