@@ -7,6 +7,13 @@ export const projects = [
     live: 'https://it-26.vercel.app',
   },
   {
+    title: 'Bill Buddy - Smart Bill Splitting',
+    description: 'An intelligent bill payment app that simplifies expense splitting among friends. Uses OCR to scan bills, lets users select what they ate, and automates payments to whoever paid the full amount. Works as a modern payment solution similar to GPay for peer-to-peer transactions.',
+    technologies: ['React', 'Node.js', 'OCR', 'Payment API', 'MongoDB'],
+    github: 'https://github.com/Riyaz2815-Mohammed/Bill_Buddy.git',
+    live: 'https://bill-buddy-chi.vercel.app',
+  },
+  {
     title: 'LACCIS - Legal Contact Clause Intelligence',
     description: 'AI-powered system for intelligent analysis and extraction of legal contract clauses. Automates contract review and clause intelligence using NLP and machine learning.',
     technologies: ['Python', 'Machine Learning', 'NLP', 'FastAPI', 'PostgreSQL'],
