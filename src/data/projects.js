@@ -25,7 +25,6 @@ export const projects = [
     description: 'AI-powered system for intelligent analysis and extraction of legal contract clauses using agentic workflows. Automates contract review, clause intelligence, and intelligent decision-making with autonomous agent coordination.',
     technologies: ['Python', 'Agentic Workflow', 'LLM Agents', 'FastAPI', 'PostgreSQL'],
     github: 'https://github.com/Riyaz2815-Mohammed/LACCIS.git',
-    live: 'https://laccis.vercel.app',
   },
 ];
 

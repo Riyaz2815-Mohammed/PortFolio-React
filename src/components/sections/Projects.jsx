@@ -40,15 +40,17 @@ export default function Projects() {
                       <FiGithub />
                       GitHub
                     </a>
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="projects__card-btn projects__card-btn--primary"
-                    >
-                      <FiExternalLink />
-                      Live Demo
-                    </a>
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="projects__card-btn projects__card-btn--primary"
+                      >
+                        <FiExternalLink />
+                        Live Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>
