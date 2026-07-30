@@ -100,7 +100,7 @@ export default function Hero() {
               <FiMail />
               Contact Me
             </Button>
-            <Button variant="outline" href="https://drive.google.com" icon={<FiDownload />}>
+            <Button variant="outline" href="https://drive.google.com/file/d/1E7UI7o85ExUSkwHxAgbVz7jNckJ2lH_c/view" icon={<FiDownload />}>
               Resume
             </Button>
           </motion.div>
