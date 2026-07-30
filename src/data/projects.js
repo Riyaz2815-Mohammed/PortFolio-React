@@ -9,7 +9,7 @@ export const projects = [
   {
     title: 'Email RAG Chatbot',
     description: 'An intelligent AI chatbot that connects to Gmail using OAuth and processes emails with Retrieval-Augmented Generation (RAG). Features vector embeddings via Sentence Transformers, Pinecone vector database for fast similarity search, and Llama 3 LLM for contextual responses. Cloud-ready with AWS deployment.',
-    technologies: ['React', 'RAG', 'Pinecone', 'Llama 3', 'Gmail API', 'AWS', 'LangChain'],
+    technologies: ['React', 'RAG', 'Pinecone', 'Llama 3', 'Gmail API', 'LangChain', 'AWS'],
     github: 'https://github.com/Riyaz2815-Mohammed/Email-RAG.git',
     live: 'https://ai-email-rag-chatbot.vercel.app',
   },
