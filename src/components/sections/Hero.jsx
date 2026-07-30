@@ -7,9 +7,8 @@ import './Hero.css';
 
 const roles = [
   'Software Engineer',
-  'AI Engineer',
   'Backend Developer',
-  'Full Stack Developer',
+  'Systems Engineer',
 ];
 
 export default function Hero() {
@@ -71,23 +70,21 @@ export default function Hero() {
             GCT Student
           </motion.div>
           <h1 className="hero__title">
-            Hi, I'm
-            <span className="text-gradient"> Mohammed Riyaz</span>
+            Hi, I'm Mohammed Riyaz.
           </h1>
           <div className="hero__role-wrapper">
-            <span className="hero__role-label">I'm a </span>
+            <span className="hero__role-label">I build </span>
             <span className="hero__role">
               {roles[roleIndex].substring(0, charIndex)}
               <span className="hero__role-cursor">|</span>
             </span>
           </div>
           <p className="hero__headline">
-            Building scalable backend systems, AI-powered products, and production-grade software.
+            I design dependable backend systems, APIs, and cloud infrastructure for real-world products.
           </p>
           <p className="hero__description">
-            I specialize in designing scalable, maintainable, production-ready systems.
-            Passionate about backend engineering, distributed systems, cloud infrastructure,
-            and AI agents. I solve difficult engineering problems rather than simply writing code.
+            I focus on writing maintainable code, shipping stable services, and improving system reliability.
+            I’m actively learning MLOps, production observability, and distributed system design as I grow.
           </p>
           <motion.div
             className="hero__actions"
@@ -107,25 +104,6 @@ export default function Hero() {
               Resume
             </Button>
           </motion.div>
-        </motion.div>
-        <motion.div
-          className="hero__scroll"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.5 }}
-        >
-          <button
-            className="hero__scroll-btn"
-            onClick={() => scrollTo('about')}
-            aria-label="Scroll to about section"
-          >
-            <span className="hero__scroll-text">Scroll</span>
-            <motion.div
-              className="hero__scroll-line"
-              animate={{ height: ['0%', '100%', '0%'] }}
-              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            />
-          </button>
         </motion.div>
       </div>
     </section>

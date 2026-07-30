@@ -10,7 +10,7 @@ export default function Expertise() {
       <div className="container">
         <SectionTitle
           title="Engineering Expertise"
-          subtitle="Core strengths and technical proficiencies"
+          subtitle="Skills I apply in production and areas I continue learning"
         />
         <div className="expertise__grid">
           {expertiseAreas.map((area, i) => (

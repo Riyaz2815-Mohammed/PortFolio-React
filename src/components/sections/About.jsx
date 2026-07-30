@@ -17,24 +17,23 @@ export default function About() {
       <div className="container">
         <SectionTitle
           title="About Me"
-          subtitle="A software engineer passionate about building systems that matter"
+          subtitle="A software engineer focused on practical systems and continuous learning"
         />
         <div className="about__content">
           <ScrollReveal className="about__text">
             <p>
               I'm a software engineer at <strong>The Yellow Network</strong> and a student at{' '}
-              <strong>Government College of Technology (GCT)</strong>. I specialize in designing
-              scalable, maintainable, production-ready systems that solve real engineering challenges.
+              <strong>Government College of Technology (GCT)</strong>. I work on backend systems,
+              API integration, and cloud infrastructure for real products.
             </p>
             <p>
-              My expertise spans <strong>backend engineering</strong>, <strong>distributed systems</strong>,{' '}
-              <strong>cloud infrastructure</strong>, and <strong>AI agent solutions</strong>. I don't just
-              write code — I architect solutions that are robust, performant, and built to scale.
+              My work is grounded in <strong>scalable engineering</strong>, <strong>system reliability</strong>,
+              and clear operational practices. I believe strong systems are built through careful design,
+              testing, and iterative improvement.
             </p>
             <p>
-              Whether it's designing a microservices architecture, building RAG pipelines, or optimizing
-              database performance, I approach every problem with engineering rigor and a focus on
-              production-grade outcomes.
+              I am actively learning <strong>MLOps</strong>, <strong>production observability</strong>, and
+              distributed system patterns while contributing to practical projects every day.
             </p>
           </ScrollReveal>
           <ScrollReveal className="about__highlights" delay={0.2}>
