@@ -114,6 +114,13 @@
   font-weight: 700;
   color: var(--text-primary);
   word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.contact__link:first-child .contact__link-value {
+  font-size: 0.85rem;
+  letter-spacing: -0.3px;
 }
 
 .contact__link-arrow {
