@@ -9,7 +9,7 @@ export const projects = [
   {
     title: 'Email RAG Chatbot',
     description: 'An intelligent AI chatbot that connects to Gmail using OAuth and processes emails with Retrieval-Augmented Generation (RAG). Features vector embeddings via Sentence Transformers, Pinecone vector database for fast similarity search, and Llama 3 LLM for contextual responses. Cloud-ready with AWS deployment.',
-    technologies: ['React', 'RAG', 'Pinecone', 'Llama 3', 'Gmail API', 'AWS'],
+    technologies: ['React', 'RAG', 'Pinecone', 'Llama 3', 'Gmail API', 'AWS', 'LangChain'],
     github: 'https://github.com/Riyaz2815-Mohammed/Email-RAG.git',
     live: 'https://ai-email-rag-chatbot.vercel.app',
   },
@@ -23,7 +23,7 @@ export const projects = [
   {
     title: 'LACCIS - Legal Clause Intelligence',
     description: 'AI-powered system for intelligent analysis and extraction of legal contract clauses using agentic workflows. Automates contract review, clause intelligence, and intelligent decision-making with autonomous agent coordination.',
-    technologies: ['Python', 'Agentic Workflow', 'LLM Agents', 'FastAPI', 'PostgreSQL'],
+    technologies: ['Python', 'Agentic Workflow', 'LLM Agents', 'FastAPI', 'PostgreSQL', 'LangChain', 'LangGraph'],
     github: 'https://github.com/Riyaz2815-Mohammed/LACCIS.git',
   },
 ];
